@@ -1,0 +1,112 @@
+Exercício 1
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x,dividido
+
+		para(x=1000;x<=1999;x++)
+		{
+			dividido = x/11
+			se(x%11==5)
+			{	
+				escreva("\nO" ,x, " dividido por 11 tem o resto 5...")
+			}
+		}
+	}
+}
+
+Exercício 2
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro j,numero,somapar=0,somaimpar=0
+
+		para(j=1;j<=10;j++)
+		{
+			escreva("\nDigite 10 números que representa algum dia importante da sua vida 10 vezes: ")
+			leia(numero)
+			
+			limpa()
+			
+			se(numero%2==0)
+			{
+				somapar++
+			}
+			senao
+			{
+				somaimpar++
+			}
+			
+		}
+		escreva("\nNesta condição temos ",somapar," pares e ",somaimpar," impares...")
+	}
+}
+
+Exercício 3
+
+programa
+{
+	
+	funcao inicio()
+	{
+	
+			inteiro idade=0,maior=0,menor=0
+
+			escreva("AVISOO! Para parar o programa basta digitar -99")
+
+			enquanto(idade!=-99)
+			{
+				
+				escreva("\nDigite a sua idade e de seus familiares: ")
+				leia(idade)
+				
+				se(idade<=21)
+				{
+					menor++
+				}
+				
+				senao se(idade>=50)
+				{
+					maior++
+				}
+
+			}
+
+			escreva("\nNúmero de pessoas da sua família que são menores de 21 anos ",menor)
+			escreva("\nNúmero de pessoas da sua família que são maiores de 50 anos ",maior)
+	}
+}
+
+Exercício 5
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero,soma=0
+		
+		faca
+		{
+			escreva("Digite um número de sua preferência(porém inteiro): ")
+			leia(numero)
+			
+			se(numero!=0)
+			{
+				soma = soma + numero
+			}
+		
+		
+		}enquanto(numero>0)
+		
+			limpa()		
+			escreva("\nA soma dos números de sua preferência são: ",soma)
+	
+	}
+}

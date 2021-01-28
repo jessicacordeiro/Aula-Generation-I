@@ -1,0 +1,138 @@
+Exemplo 1 - Sala Remota
+
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+		//escreva("Olá Mundo")
+		inteiro n1=7,n2,soma,divisao
+		real nota1,nota2=6.5,nota3,media,raiz,potencia
+		cadeia nome 
+
+		escreva ("Digite o seu nome meu amige :")
+		leia(nome)
+
+		escreva ("Entre com o número 2: ")
+		leia (n2)
+		soma = n1+n2
+		divisao = n1/n2
+		escreva ("A soma foi de: ",soma)
+		escreva ("\nA divisão foi de: ", divisao)
+
+		escreva("\nEntre com a primeira nota: ")
+		leia(nota1)
+		escreva("\nEntre com a terceira nota: ")
+		leia(nota3)
+		media = (nota1+nota2+nota3)/3
+		escreva ("\nA média foi de: ",mat.arredondar(media, 2))
+
+		raiz = mat.raiz(nota1, 2.0)
+		potencia = mat.potencia(nota1, 3.0)
+		escreva("\nA raiz quadrada da primeira nota foi de: ",raiz)
+		escreva("\nA potencia da primeira nota foi de: ",potencia)
+
+		escreva ("\nMuito obrigado senhore : ",nome," por utilizar o nosso sistema...")
+		
+	}
+}
+
+Vídeo Aula 
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real num1,num2,res
+		escreva("Entre com num1: ")
+		leia(num1)
+		escreva("Entre com num2: ")
+		leia(num2)
+		res= num1+num2
+		escreva("\nSoma: ",res)
+		res= num1-num2
+		escreva("\nDiferença: ",res)
+		res= num1*num2
+		escreva("\nMultiplicação: ",res)
+		res= num1/num2
+		escreva("\nDivisão: ",res)
+	}
+}
+
+Vídeo Aula 2
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro a,b
+		a=5
+		b=10
+		escreva("O valor de A: ", a, " é maior que o valor de 8: ",b)
+		escreva("\nA é maior que B???",a>b,"\n")
+		escreva("O valor de A: ", a, " é menor que o valor de 8: ",b)
+		escreva("\nA é maior que B???",a<b,"\n")
+		escreva("O valor de A: ", a, " é diferente que o valor de 8: ",b)
+		escreva("\nA é maior que B???",a!=b,"\n")
+		escreva("O valor de A: ", a, " é igual que o valor de 8: ",b)
+		escreva("\nA é maior que B???",a==b,"\n")
+	}
+}
+
+exercício 4 
+
+programa
+{
+	
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+		inteiro a,b,c
+		real d
+		
+		escreva("Digite com o valor de A: ")
+		leia(a)
+		escreva("Digite com o valor de B: ")
+		leia(b)
+		escreva("Digite com o valor de C: ")
+		leia(c)
+
+		d = (mat.potencia((a+b),2)+mat.potencia((b+c),2))/2
+
+		
+		escreva("O valor de D é: ",mat.arredondar(d,2))
+		
+	}
+}
+
+
+exercício 6
+
+programa
+{
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+		real x1,x2,y1,y2
+
+		escreva("Digite o valor de X1: ")
+		leia(x1)
+		escreva("Digite o valor de X2: ")
+		leia(x2)
+		escreva("Digite o valor de Y1: ")
+		leia(y1)
+		escreva("Digite o valor de Y2: ")
+		leia(y2)
+
+		d = mat.raiz(mat.potencia((x2-x1),2.0)+mat.potencia((y2-y1),2.0)/2
+		 
+	}
+}
+
+

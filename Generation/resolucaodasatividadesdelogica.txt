@@ -1,0 +1,98 @@
+Exercício 1
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro idadeanos,idademeses,idadedias, totalidadedias
+		
+		escreva("Calculadora de idade em dias")
+		
+		escreva("\nDigite quantos anos voce tem: ")
+		leia(idadeanos)
+		escreva("Digite o seu mes de nascimento: ")
+		leia(idademeses)
+		escreva("Digite o dia do seu aniversario: ")
+		leia(idadedias)
+
+		escreva("\nSua idade total em dias são: " +(idadeanos * 365)+(idademeses * 30)+(idadedias * 1))
+	}
+}
+
+
+Exercício 3
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro tempo,horas,minutos,segundos
+
+		escreva("Tempo de duração do evento na Firma Expressa")
+		
+		escreva("\nDigite os segundos de duracao do evento: ")
+		leia(segundos)
+
+		horas = segundos / 3600
+		minutos = (segundos-(horas*3600))/60
+		segundos = (segundos-(horas*3600)-(minutos*60))
+
+		 escreva("O evento na firma Expressa durou: ",horas,"H",minutos,"Min.",segundos,"Seg.")
+
+	}
+		 
+		
+}
+
+
+Exercício 5
+
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+		real n1,n2,n3,media
+
+		escreva("Calculo da média final das suas notas na faculdade")
+
+		escreva("\nDigite a sua nota da N1: ")
+		leia(n1)
+		escreva("Digite a sua nota da N2: ")
+		leia(n2)
+		escreva("Digite a sua nota da N3: ")
+		leia(n3)
+
+		media = ((n1*2)+(n2*3)+(n3*5))/10
+		escreva("Sua média final  é: ",mat.arredondar(media, 2))
+	}
+}
+
+Exercício 8
+
+programa
+{
+	inclua biblioteca Matematica
+ --> mat
+	
+	funcao inicio()
+	{
+		real custodefabrica,custodistribuidora,imposto,custofinal
+
+		escreva("Descubra o Custo Final do seu Carro Aqui: ")
+
+		escreva("\nDigite o custo de fabrica do seu veiculo: ")
+		leia(custodefabrica)
+		
+		custodistribuidora = 0.28*custodefabrica
+		imposto = 0.45*custodefabrica
+		custofinal = custodefabrica + imposto + custodistribuidora
+
+		escreva("O custo para o consumidor final é de: ",mat.arredondar(custofinal, 3))
+	}
+}
+

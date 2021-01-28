@@ -1,0 +1,60 @@
+Exercício 1
+
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro A[6],soma=0,n
+
+		para(n=0;n<6;n++)
+		{
+			escreva("Digite um valor: ")
+			leia(A[n])
+		
+		}
+			limpa()
+			A[4]=100
+
+				para(n=1;n<6;n++)
+					{
+						escreva("\n[",A[n],"]\n")
+					}
+				
+					para(n=1;n<6;n++)
+						{
+							soma=A[0]+A[1]+A[5]
+		 
+						}
+							escreva("\nA soma dos conteúdo das posições [0] [1] [5] = ",soma)
+	}
+}
+
+Exercício 3
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro mat[3][3],n=0,l,c
+		
+		para(l=0;l<3;l++)
+			{
+				para(c=0;c<3;c++)
+					{
+						escreva("\nDigite um número de sua preferência: ")
+						leia(mat[l][c])
+
+							 se(mat[l][c]>10)
+							 {
+							 	n++
+							 }
+					}
+
+			}
+
+		escreva("\nNa matriz realizada acima temos, ",n," números que são maiores que 10...")
+	}
+}

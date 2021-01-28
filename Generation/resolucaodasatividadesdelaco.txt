@@ -1,0 +1,131 @@
+Exercício 1
+
+programa
+{
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+		real quilos,excesso,multa
+
+		escreva("Sistema de Verificação de peso: ")
+
+		escreva("\nDigite o número de quilos de tomates que você pegou: ")
+		leia(quilos)
+
+		excesso = quilos-50
+		multa = excesso*4
+		
+		limpa()
+		se (quilos > 50)
+		{
+			escreva("O peso dos tomates está acima do permitido pelo regulamento... Você terá que pagar uma multa de R$: ",multa)
+		}
+		senao se(quilos <=50)
+		{
+			escreva("Você está dentro do valor permitido pelo regulamento")
+		}
+		
+	}
+}
+
+Exercício 4
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero
+
+		escreva("Digite um número de sua preferência, porém inteiro: ")
+		leia(numero)
+
+		se(numero % 2 == 0)
+		{
+			escreva("O seu número é par")
+		}
+		se(numero % 2 != 0)
+		{
+			escreva("O seu número é ímpar")
+		}
+		se(numero < 0)
+		{
+			escreva(" e negativo!")
+		}
+		se(numero >= 0)
+		{
+			escreva(" e positivo!")
+		}
+		
+	}
+}
+
+Exercício 6
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real idade
+		cadeia nome
+
+		escreva("Lista Automática de Classificação das Categorias dos Nadadores JAVA")
+
+		escreva("\nSeu nome por favor: ")
+		leia(nome)
+		escreva("Digite aqui a sua Idade por favor: ")
+		leia(idade)
+
+		limpa()
+		se(idade >=5 e idade<= 7)
+		{
+			escreva("Olá ",nome," você se enquadra na categoria Infantil A... Obrigado(a) por utilizar o nosso sistema")
+		}
+		se(idade >=8 e idade<= 11)
+		{
+			escreva("Olá ",nome," você se enquadra na categoria Infantil B... Obrigado(a) por utilizar o nosso sistema")
+		}
+		se(idade >=12 e idade<= 13)
+		{
+			escreva("Olá ",nome," você se enquadra na categoria Juvenil A... Obrigado(a) por utilizar o nosso sistema")
+		}
+		se(idade >=14 e idade<= 17)
+		{
+			escreva("Olá ",nome," você se enquadra na categoria Juvenil B... Obrigado(a) por utilizar o nosso sistema")
+		}
+		se(idade >=18)
+		{
+			escreva("Olá ",nome," você se enquadra na categoria de Adultos... Obrigado(a) por utilizar o nosso sistema")
+		}
+		senao se(idade <5)
+		{
+			escreva("Olá ",nome," infelizmente você está fora de nossas categorias por não obter a idade mínina estabelecida em nosso clube.")
+		}
+	}
+}
+
+Exercício 8
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real n
+
+		escreva("\nDigite um número inteiro de sua escolha: ")
+		leia(n)
+
+		se (n>100)
+		{
+			escreva(n)
+		}
+		senao se(n<100)
+		{
+			escreva(0)
+		}
+	}
+}
+
